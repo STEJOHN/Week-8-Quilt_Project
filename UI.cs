@@ -9,9 +9,9 @@ namespace QuiltShape
     class UI
     {
 
-        public static void StartMethod()
+        public static void MenuSelection()
         {
-            Console.WriteLine("\n\n\n\n");
+            Console.WriteLine("\n\n");
             Console.WriteLine("Please select a shape to begin");
             Console.WriteLine("\n\n");
             Console.WriteLine("S or square      --        Add a Square");

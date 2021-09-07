@@ -25,7 +25,7 @@ namespace QuiltShape
 
             while (userInput != "e" || userInput != "exit")
             {
-                UI.StartMethod();
+                UI.MenuSelection();
                 
                 
                 userInput = Console.ReadLine().ToLower();
