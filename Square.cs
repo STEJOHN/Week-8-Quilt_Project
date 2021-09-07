@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuiltShape
+﻿namespace QuiltShape
 {
     class Square : Shape
     {
@@ -21,9 +15,9 @@ namespace QuiltShape
         }
         public override int TotalArea()
         {
-             int result = Side1 * Side1;
+            int result = Side1 * Side1;
             return result;
-            
+
 
         }
     }

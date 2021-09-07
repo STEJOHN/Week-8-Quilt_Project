@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuiltShape
+﻿namespace QuiltShape
 {
     public abstract class Shape
     {
-        
+
         public string Name { get; set; }
         public string Color { get; set; }
         public int Side1 { get; set; }
@@ -20,7 +14,7 @@ namespace QuiltShape
 
         public Shape()
         {
-           
+
         }
 
     }

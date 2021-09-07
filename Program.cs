@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 
 namespace QuiltShape
@@ -11,23 +10,23 @@ namespace QuiltShape
 
         static void Main(string[] args)
         {
-            
+
             List<Shape> shapes = new List<Shape>();
-           
+
 
             string userInput = Console.ReadLine().ToLower();
 
 
-            
 
-                Console.WriteLine("\n");
-                Console.WriteLine("Welcome to Stephen's Quilt application");
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Welcome to Stephen's Quilt Application");
 
             while (userInput != "e" || userInput != "exit")
             {
                 UI.MenuSelection();
-                
-                
+
+
                 userInput = Console.ReadLine().ToLower();
                 switch (userInput)
                 {
@@ -35,7 +34,7 @@ namespace QuiltShape
                     case "square":
                         Square s1 = new Square();
                         s1.Name = "Square";
-                        Console.WriteLine("You selected a "  + s1.Name);
+                        Console.WriteLine("You selected a " + s1.Name);
                         Console.WriteLine("Select a color for your square");
                         s1.Color = Console.ReadLine();
                         Console.WriteLine("Enter the length");
@@ -52,7 +51,7 @@ namespace QuiltShape
                         Console.WriteLine("Select a color for your triangle");
                         t1.Color = Console.ReadLine();
                         Console.WriteLine("Enter the length of side A");
-                        t1.Side1 = Convert.ToInt32(Console.ReadLine());                  
+                        t1.Side1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter the length of side B");
                         t1.Side2 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter the length of side C");
@@ -75,13 +74,13 @@ namespace QuiltShape
                         Console.WriteLine("The area of the rectangle is " + r1.TotalArea());
                         shapes.Add(r1);
                         break;
-                        
+
                     case "l":
                     case "list":
                         Console.WriteLine("\n\n");
                         Console.WriteLine("List of shapes");
                         Console.WriteLine("--------------");
-                     
+
                         foreach (var shape in shapes)
                         {
                             Console.WriteLine($"{shape.Color} {shape.Name} with total area of {shape.TotalArea()}.");
@@ -99,22 +98,22 @@ namespace QuiltShape
                             break;
                         }
                         break;
-                    
+
                     case "e":
                     case "exit":
                         Console.Clear();
                         Environment.Exit(0);
                         break;
 
-                        
+
                     default:
                         Console.WriteLine("Please enter the correct selection");
                         break;
                 }
-                
+
 
                 Console.ReadKey();
-              
+
             }
         }
     }
