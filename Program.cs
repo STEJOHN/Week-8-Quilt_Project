@@ -11,15 +11,13 @@ namespace QuiltShape
         static void Main(string[] args)
         {
 
-            List<Shape> shapes = new List<Shape>();
+
+            List<Shape> shapes = new();
 
 
             string userInput = Console.ReadLine().ToLower();
 
-
-
-
-            Console.WriteLine("\n");
+            
             Console.WriteLine("Welcome to Stephen's Quilt Application");
 
             while (userInput != "e" || userInput != "exit")
@@ -43,6 +41,7 @@ namespace QuiltShape
                         shapes.Add(s1);
                         break;
 
+
                     case "t":
                     case "triangle":
                         Triangle t1 = new Triangle();
@@ -60,6 +59,7 @@ namespace QuiltShape
                         shapes.Add(t1);
                         break;
 
+
                     case "r":
                     case "rectangle":
                         Rectangle r1 = new Rectangle();
@@ -75,6 +75,7 @@ namespace QuiltShape
                         shapes.Add(r1);
                         break;
 
+
                     case "l":
                     case "list":
                         Console.WriteLine("\n\n");
@@ -88,6 +89,7 @@ namespace QuiltShape
                         }
                         break;
 
+
                     case "c":
                     case "clear":
                         Console.WriteLine("Are you sure you want to clear list? (y) for yes or any key to cancel");
@@ -99,6 +101,7 @@ namespace QuiltShape
                         }
                         break;
 
+
                     case "e":
                     case "exit":
                         Console.Clear();
@@ -109,11 +112,11 @@ namespace QuiltShape
                     default:
                         Console.WriteLine("Please enter the correct selection");
                         break;
+
+
                 }
 
-
                 Console.ReadKey();
-
             }
         }
     }

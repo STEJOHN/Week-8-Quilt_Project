@@ -4,7 +4,6 @@
     {
 
 
-
         public Rectangle()
         {
 
@@ -18,6 +17,7 @@
             Side1 = length;
             Side2 = width;
         }
+
 
         public override int TotalArea()
         {

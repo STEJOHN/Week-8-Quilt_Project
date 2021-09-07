@@ -4,6 +4,8 @@ namespace QuiltShape
 {
     class Triangle : Shape
     {
+
+
         public Triangle()
         {
 
