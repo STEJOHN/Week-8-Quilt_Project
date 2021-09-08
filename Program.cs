@@ -6,7 +6,7 @@ namespace QuiltShape
 {
     class Program
     {
-        public static string Name { get; private set; }
+
 
         static void Main(string[] args)
         {
